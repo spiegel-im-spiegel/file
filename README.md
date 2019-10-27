@@ -6,6 +6,8 @@
 
 ## Usage
 
+Search with `**/` wildcard (match all directories recursively).
+
 ```go
 matches, err := file.Glob("**/*.[ch]")
 if err != nil {
@@ -20,7 +22,7 @@ for _, path := range matches {
 // testdata/source.c
 ```
 
-### Glab with context.Context
+### Glob with context.Context
 
 ```go
 matches, err := file.GlobWithContext(context.Background(), "**/*.[ch]")
@@ -36,7 +38,7 @@ for _, path := range matches {
 // testdata/source.c
 ```
 
-### Glab with flags
+### Glob with flags
 
 ```go
 matches, err := file.Glob("**/*.[ch]", file.WithFlags(file.StdFlags|file.AbsolutePath))
