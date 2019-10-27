@@ -1,5 +1,8 @@
 # [file] -- Extend filepath.Glob function
 
+[![Build Status](https://travis-ci.org/spiegel-im-spiegel/file.svg?branch=master)](https://travis-ci.org/spiegel-im-spiegel/file)
+[![GitHub license](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/spiegel-im-spiegel/file/master/LICENSE)
+[![GitHub release](http://img.shields.io/github/release/spiegel-im-spiegel/file.svg)](https://github.com/spiegel-im-spiegel/file/releases/latest)
 
 ## Usage
 

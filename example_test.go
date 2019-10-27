@@ -36,19 +36,19 @@ func ExampleGlobWithContext() {
 	//testdata/source.c
 }
 
-func ExampleWithFlags() {
-	matches, err := file.GlobWithContext(context.Background(), "**/*.[ch]", file.WithFlags(file.StdFlags|file.AbsolutePath|file.SeparatorSlash))
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "%+v\n", err)
-		return
-	}
-	for _, path := range matches {
-		fmt.Println(path)
-	}
-	// Output:
-	// testdata/include/source.h
-	// testdata/source.c
-}
+// func ExampleWithFlags() {
+// 	matches, err := file.GlobWithContext(context.Background(), "**/*.[ch]", file.WithFlags(file.StdFlags|file.AbsolutePath|file.SeparatorSlash))
+// 	if err != nil {
+// 		fmt.Fprintf(os.Stderr, "%+v\n", err)
+// 		return
+// 	}
+// 	for _, path := range matches {
+// 		fmt.Println(path)
+// 	}
+// 	// Output:
+// 	// testdata/include/source.h
+// 	// testdata/source.c
+// }
 
 /* MIT License
  *
