@@ -28,7 +28,11 @@ func (p *pathList) Append(paths ...string) {
 	}
 	p.mutex.Lock()
 	for _, path := range paths {
-		p.paths = append(p.paths, normalizePath(path))
+		if len(path) == 0 {
+			p.paths = append(p.paths, path)
+		} else {
+			p.paths = append(p.paths, normalizePath(path))
+		}
 	}
 	p.mutex.Unlock()
 }
